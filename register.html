@@ -12,6 +12,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="navbar.css">
 	<link rel="stylesheet" type="text/css" href="tree.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
     
 <body>
@@ -33,15 +37,23 @@
 		<div class="midcontent4" >
 			<h3> Register </h3>
 			<form action="index.html">
-				Username: <br> <input type="text">
-				<br><br>
-				Email: <br> <input type="password">
-				<br><br>
-				Password: <br> <input type="text">
-				<br><br>
-				Confirm Password: <br> <input type="password">
-				<br><br>
-				<input type="submit" value="submit">
+				<div class="form-group">
+					<label for="username">Username:</label>
+					<input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
+				</div>
+				<div class="form-group">
+					<label for="username">Email:</label>
+					<input type="text" class="form-control" id="username" placeholder="Enter Email" name="username">
+				</div>
+				<div class="form-group">
+					<label for="username">Password:</label>
+					<input type="password" class="form-control" id="username" placeholder="Enter Password" name="username">
+				</div>
+				<div class="form-group">
+					<label for="username">Confirm Password:</label>
+					<input type="password" class="form-control" id="username" placeholder="Enter Confirm Password" name="username">
+				</div>
+				<input type="submit" value="Submit">
 			</form>
 		</div>
 		<div class="rightcontent">
