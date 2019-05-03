@@ -35,6 +35,13 @@ header {
 	position: absolute;
 	left: 1130px;
 }
+
+.rightheader2 {
+	display: inline-block;
+	position: absolute;
+	left: 930px;
+}
+
 .button1 {
 	display: block;
 	margin: 1px 0px 0px 155px;
