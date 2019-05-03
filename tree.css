@@ -1,0 +1,45 @@
+ul, #UL {
+  list-style-type: none;
+}
+
+#UL {
+  margin: 0;
+  padding: 0;
+}
+
+ul, #UL2 {
+  list-style-type: none;
+}
+
+#UL2 {
+  margin: 0;
+  padding: 0;
+}
+
+.default{
+	background-color: white;
+}
+
+.caret {
+  cursor: pointer;
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.caret-down::before {
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}

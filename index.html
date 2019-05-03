@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>GamRum - Tempatnya Gamer Berdiskusi</title>    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nova+Flat');
+        body {
+            font-family: Nova Flat;
+		}	
+	</style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="navbar.css">
+	<link rel="stylesheet" type="text/css" href="tree.css">
+</head>
+    
+<body>
+	<div class="header">
+		<img src="logo.jpg" class="logo" alt="mylogo">
+		<header class="theme">GamRum</header>
+		<div class="rightheader">
+			<div class="theme"><b>Selamat datang, "Username"</b></div>
+			<a href="login.php" class="button1">Keluar</a>
+		</div>
+		<div style="background-color: white;">
+			<navbar>
+				<li class="nav"><a class="nav active" href="index.html">Beranda</a></li>
+				<li class="nav"><a class="nav" href="maingame.php">Games</a></li>
+				<li class="nav"><a class="nav" href="about.php">Tentang</a></li>
+			</navbar>
+		</div>
+    </div>
+	<div class="content">
+		<div class="bg"></div>
+		<div class="leftcontent">
+			<br> <div class="theme" style="text-align: center"><b>Platforms</b></div> 
+			<br> <ul id="UL">
+				<li><span class="caret">PC</span>
+					<ul class="nested">
+						<li class="default">Desktop</li>
+						<li>Tablet</li>
+						<li>Smartphone</li>
+					</ul>
+				</li>
+				<li><span class="caret">PlayStation</span>
+					<ul class="nested">
+						<li>PlayStation</li>
+						<li>PlayStation 2</li>
+						<li>PlayStation 3</li>
+						<li>PlayStation 4</li>
+						<li>PSP</li>
+						<li>PS Vita</li>
+					</ul>
+				</li>
+				<li><span class="caret">Xbox</span>
+					<ul class="nested">
+						<li>Xbox</li>
+						<li>Xbox 360</li>
+						<li>Xbox One</li>
+					</ul>
+				</li>
+				<li><span class="caret">Nintendo</span>
+					<ul class="nested">
+						<li>Nintendo Wii</li>
+						<li>Nintendo Wii U</li>
+						<li>Nintendo Switch</li>
+						<li>Game Boy</li>
+						<li>Game Boy Advance</li>
+						<li>Nintendo DS</li>
+						<li>Nintendo 3DS</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="midcontent">
+			TEST <br>
+			<div class="theme" style="font-size: 30px"><b>Followed Games</b></div>
+				<div class="icons" style="text-align: center; font-size: 12px"><img src="18bb33209e.png" class="icon" alt="pabji">Gim Haram XD</div>
+				<div class="icons" style="text-align: center; font-size: 12px"><img src="588274.png" class="icon" alt="pabji">Pro Evolution Soccer</div>
+			<div class="theme" style="font-size: 30px"><b>Recommended Games</b></div>
+			<div class="theme" style="font-size: 30px"><b>Most Popular Games</b></div>
+		</div>
+		<div class="rightcontent">
+			<br> <div class="theme" style="text-align: center"><b>Tags</b></div> 
+			<br> <ul id="UL2">
+				<li><span class="caret">Action</span></li>
+				<li><span class="caret">Indie</span></li>
+				<li><span class="caret">Racing</span></li>
+				<li><span class="caret">Shooter</span></li>
+			</ul>
+		</div>
+	</div>
+	<script src="tree.js"></script>
+</body>
+</html>
