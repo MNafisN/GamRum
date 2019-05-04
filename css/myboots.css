@@ -5,13 +5,15 @@
 
 .panel {
   margin-bottom: 20px;
+  margin-top: 25px;
+  margin-right: -15px;
   background-color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
-.panel-body {
+.panel-body { 
   padding: 15px;
 }
 .panel-info {
@@ -33,8 +35,8 @@
   border-bottom-color: #bce8f1;
 }   
 .form-control {
-  display: block;
-  width: 100%;
+  /*display: block;*/
+  width: 88%;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
@@ -113,6 +115,9 @@ textarea.form-control {
 
 .pull-right {
   float: right !important;
+}
+.pull-left {
+  float: left !important;
 }
 .clearfix:before,
 .clearfix:after,
