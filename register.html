@@ -25,37 +25,43 @@
 			<form>
 				Username: <input type="text">
 				Password: <input type="password">
-				<input type="submit" value="submit">
+				<input type="submit" value="Login" onClick="alertregister()">
 			</form>
+			<script>
+				function alertregister() {
+					alert("Please finish your register first");
+				}
+			</script>
 		</div>
     </div>
-	<div class="content">
+	<div style="background-color: darkgray; height: 590px; overflow: hidden">
 		<div class="bg"></div>
-		<div class="leftcontent">
-		</div>
-		<div class="midcontent4" >
-			<h3> Register </h3>
-			<form action="index.html">
+		<div class="midcontent4">
+			<h3 style="text-align: center">Register</h3>
+			<form action="login.html">
 				<div class="form-group">
 					<label for="username">Username:</label>
 					<input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
 				</div>
 				<div class="form-group">
 					<label for="username">Email:</label>
-					<input type="email" class="form-control" id="username" placeholder="Enter Email" name="username">
+					<input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
 				</div>
 				<div class="form-group">
 					<label for="username">Password:</label>
-					<input type="password" class="form-control" id="username" placeholder="Enter Password" name="username" minlength="8" required>
+					<input type="password" class="form-control" id="password" placeholder="Enter password" name="pwd" minlength="8" required>
 				</div>
 				<div class="form-group">
 					<label for="username">Confirm Password:</label>
-					<input type="password" class="form-control" id="username" placeholder="Enter Confirm Password" name="username" minlength="8" required>
+					<input type="password" class="form-control" id="confpassword" placeholder="Re-enter your password" name="confpwd" minlength="8" required>
 				</div>
-				<input type="submit" value="Submit">
+				<input type="submit" value="Submit" style="margin-left: 82px" onClick="loginsukses()">
 			</form>
-		</div>
-		<div class="rightcontent">
+			<script>
+				function loginsukses() {
+					alert("Daftar sukses");
+				}
+			</script>
 		</div>
 	</div>
 	<script src="js/tree.js"></script>
