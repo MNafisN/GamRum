@@ -127,3 +127,25 @@ a:hover {
 	width: 70px;
 	height: 70px;
 }
+.icons2 {
+	display: block;
+	margin-left: 50px;
+	width: 80px;
+	height: 120px;
+	float: left;
+	clear: both;
+}
+.icon2 {
+	width: auto;
+	height: 70px;
+}
+.icondescription {
+	display: inline-block;
+	position: absolute;
+	margin-left: 100px;
+	padding-top: 20px;
+	width: 650px;
+	height: 120px;
+	text-align: justify;
+	color: black;
+}
