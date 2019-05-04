@@ -16,10 +16,6 @@ ul, #UL2 {
   padding: 0;
 }
 
-.default{
-	background-color: white;
-}
-
 .caret {
   cursor: pointer;
   user-select: none;
@@ -40,6 +36,7 @@ ul, #UL2 {
   display: none;
 }
 
-.active {
+.navactive {
   display: block;
+  background-color: white;
 }
