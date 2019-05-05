@@ -125,7 +125,7 @@ textarea.form-control {
 }
 
 .comment-wrapper .panel-body {
-    max-height:380px;
+    max-height:375px;
     overflow:scroll;
 	overflow-x:hidden;
 }
