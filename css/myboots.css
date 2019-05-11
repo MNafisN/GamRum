@@ -158,6 +158,23 @@ textarea.form-control {
     margin-bottom:25px;
 }
 
+.comment-wrapper3 .panel-body {
+    max-height:315px;
+    overflow:scroll;
+	overflow-x:hidden;
+}
+
+.comment-wrapper3 .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper3 .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+
 .pull-right {
   float: right !important;
 }
