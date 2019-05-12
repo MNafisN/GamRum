@@ -159,7 +159,7 @@ textarea.form-control {
 }
 
 .comment-wrapper3 .panel-body {
-    max-height:315px;
+    max-height:350px;
     overflow:scroll;
 	overflow-x:hidden;
 }
