@@ -12,6 +12,29 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/tree.css">
+	<script>
+	function showResult(str) {
+    if (str.length==0) {
+      document.getElementById("search").innerHTML="";
+      document.getElementById("search").style.border="0px";
+      return;
+    }
+    if (window.XMLHttpRequest) {
+      // code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp=new XMLHttpRequest();
+    } else {  // code for IE6, IE5
+      xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function() {
+      if (this.readyState==4 && this.status==200) {
+        document.getElementById("search").innerHTML=this.responseText;
+        document.getElementById("search").style.border="1px solid #A5ACB2";
+      }
+    }
+    xmlhttp.open("GET","livesearch.php?q="+str,true);
+    xmlhttp.send();
+  }
+	</script>
 </head>
     
 <body>
@@ -21,6 +44,7 @@
 		<div class="rightheader">
 			<div class="theme"><b>Selamat datang, "Username"</b></div>
 			<a href="login.html" class="button1">Keluar</a>
+			<br>
 		</div>
 		<div style="background-color: white;">
 			<navbar>
@@ -29,6 +53,7 @@
 				<li class="nav"><a class="nav" href="tentang.html">Tentang</a></li>
 			</navbar>
 		</div>
+		
     </div>
 	<div class="content">
 		<div class="bg"></div>
@@ -148,8 +173,14 @@
 						<a href="detailgame.html">Grand Theft Auto V</a>
 					</div>
 				</a>
+
+				
 		</div>
 		<div class="rightcontent">
+				<form>
+						<input  type="text" size="29" onkeyup="showResult(this.value)">
+						<div id="search" style="background-color: black;"></div>
+				</form>
 			<br> <div class="theme" style="text-align: center"><b>Tags</b></div> 
 			<br> <ul id="UL2">
 				<li><span class="caret">Action</span></li>
