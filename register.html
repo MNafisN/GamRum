@@ -38,7 +38,7 @@
 		<div class="bg"></div>
 		<div class="midcontent4">
 			<h3 style="text-align: center">Register</h3>
-			<form action="login.html">
+			<form name="regis" action="login.html" onSubmit="return validateForm()">
 				<div class="form-group">
 					<label for="username">Username:</label>
 					<input type="text" class="form-control" id="username" placeholder="Enter username" name="username">
@@ -55,11 +55,18 @@
 					<label for="username">Confirm Password:</label>
 					<input type="password" class="form-control" id="confpassword" placeholder="Re-enter your password" name="confpwd" minlength="8" required>
 				</div>
-				<input type="submit" value="Submit" style="margin-left: 82px" onClick="loginsukses()">
+				<input type="submit" value="Submit" style="margin-left: 82px">
 			</form>
 			<script>
-				function loginsukses() {
-					alert("Daftar sukses");
+				function validateForm() {
+					var x = document.forms["regis"]["username"].value;
+					if (x == "") {
+						alert("Username must be filled out");
+						return false;
+					}
+					else {
+						alert("Login success!")
+					}
 				}
 			</script>
 		</div>

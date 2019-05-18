@@ -3,7 +3,7 @@ ul, #UL {
 }
 
 #UL {
-  margin: 0;
+  margin-left: 1px;
   padding: 0;
 }
 
@@ -12,7 +12,7 @@ ul, #UL2 {
 }
 
 #UL2 {
-  margin: 0;
+  margin-left: 10px;
   padding: 0;
 }
 
