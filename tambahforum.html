@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>GamRum - Tempatnya Gamer Berdiskusi</title>    
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Nova+Flat');
+        body {
+            font-family: Nova Flat;
+		}	
+	</style>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/tree.css">
+	<link rel="stylesheet" type="text/css" href="css/tes.css">
+
+	<script type="text/javascript" src="js/search.js"></script>
+</head>
+    
+<body>
+	<div class="header">
+		<img src="images/logo.jpg" class="logo" alt="mylogo">
+		<header class="theme">GamRum</header>
+		<div class="rightheader">
+			<div class="theme"><b>Selamat datang, "Username"</b></div>
+			<a href="login.html" class="button1">Keluar</a>
+		</div>
+		<div style="background-color: white;">
+			<navbar>
+				<li class="nav"><a class="nav" href="index.html">Beranda</a></li>
+				<li class="nav"><a class="nav active" href="game.html">Games</a></li>
+				<li class="nav"><a class="nav" href="tentang.html">Tentang</a></li>
+			</navbar>
+		</div>
+    </div>
+	<div class="content">
+		<div class="bg"></div>
+		<div class="leftcontent">
+			<br> <div class="theme" style="text-align: center"><b>Platforms</b></div> 
+			<br> <ul id="UL">
+				<li><span class="caret">PC</span>
+					<ul class="nested">
+						<li class="default">Desktop</li>
+						<li>Tablet</li>
+						<li>Smartphone</li>
+					</ul>
+				</li>
+				<li><span class="caret">PlayStation</span>
+					<ul class="nested">
+						<li>PlayStation</li>
+						<li>PlayStation 2</li>
+						<li>PlayStation 3</li>
+						<li>PlayStation 4</li>
+						<li>PSP</li>
+						<li>PS Vita</li>
+					</ul>
+				</li>
+				<li><span class="caret">Xbox</span>
+					<ul class="nested">
+						<li>Xbox</li>
+						<li>Xbox 360</li>
+						<li>Xbox One</li>
+					</ul>
+				</li>
+				<li><span class="caret">Nintendo</span>
+					<ul class="nested">
+						<li>Nintendo Wii</li>
+						<li>Nintendo Wii U</li>
+						<li>Nintendo Switch</li>
+						<li>Game Boy</li>
+						<li>Game Boy Advance</li>
+						<li>Nintendo DS</li>
+						<li>Nintendo 3DS</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="midcontent" style="">
+			
+			<h3 style = "text-align:center">Playerunknown's Battlegrounds</h3>
+			<nav>
+                <a class = "nav" href="detailgame.html">Overview</a>
+                <a class = "nav active2" href="forum.html">Forums</a>
+                <a class = "nav" href="guide.html">Guides</a>
+                <a class = "nav" href="review.html">Review</a>
+                <a class = "nav" href="#">Bug Log</a>
+                <a class = "nav" href="#">Updates</a>
+                <a class = "nav" href="#">Recommended Videos</a>
+            </nav>
+            <div class="panel" style="margin-top: 85px; margin-right: -255px; padding-right: 25px;"><div class="panel-body">
+            <h3 style="text-align: center">Tambah Forum</h3>
+			<form name="regis" action="login.html" onSubmit="return validateForm()">
+				<div class="form-group">
+					<label for="username">Judul forum:</label>
+					<input type="text" class="form-control" id="username" placeholder="Enter title" name="username">
+				</div>
+				<div class="form-group">
+					<label for="username">Pertanyaan:</label>
+					<textarea class="form-control" rows="5" placeholder="Enter question" id="comment"> </textarea>
+				</div>
+				<a href="forum1.html" type="button" class="btn btn-primary pull-right" style="margin-right: -25px">Submit</a>
+				
+			</form>
+			<script>
+				function validateForm() {
+					var x = document.forms["regis"]["username"].value;
+					if (x == "") {
+						alert("Username must be filled out");
+						return false;
+					}
+					else {
+						alert("Register success!")
+					}
+				}
+			</script></div>
+		</div>
+	  </div>
+		<div class="rightcontent">
+				<form>
+						<input  type="text" size="29" onkeyup="showResult(this.value)" placeholder="Search Game">
+						<div id="search" style="background-color: black; position: absolute;"></div>
+				</form>
+			<br> <div class="theme" style="text-align: center"><b>Tags</b></div> 
+			<br> <ul id="UL2">
+				<li><span class="caret">Action</span></li>
+				<li><span class="caret">Indie</span></li>
+				<li><span class="caret">Racing</span></li>
+				<li><span class="caret">Shooter</span></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/tree.js"></script>
+
+</body>
+</html>
